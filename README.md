@@ -1,3 +1,5 @@
+A minimal working environment for latex.
+
 # Prerequisites
 *entr* filechange command trigger. For installation, refer to </br>
 https://github.com/clibs/entr
@@ -14,7 +16,7 @@ http://www.tug.org/mactex/morepackages.html.
 
 `./filechange-compile`
 
-
+This will generate a pdf and delete all the auxilary files after, every time your input files (.bib, .tex) change.
 # Troubleshooting
 If packages are missing, e.g. you get an error 'missing-package.sty not found'
 
