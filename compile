@@ -1,0 +1,21 @@
+PROJECT_NAME=$1
+TEMP_DIR=tmp-compiling
+rm -rf ${TEMP_DIR}
+mkdir ${TEMP_DIR}
+
+cd ${TEMP_DIR}
+cp ../*.tex .
+cp ../*.bib .
+cp ../*.png .
+cp ../*.sty .
+cp ../logo .
+
+#triple call is required for bibtex to work
+pdflatex ${PROJECT_NAME}
+bibtex ${PROJECT_NAME}
+pdflatex ${PROJECT_NAME}
+pdflatex ${PROJECT_NAME}
+
+cp ${PROJECT_NAME}.pdf ..
+cd ..
+rm -rf ${TEMP_DIR}
