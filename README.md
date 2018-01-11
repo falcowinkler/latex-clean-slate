@@ -16,7 +16,8 @@ http://www.tug.org/mactex/morepackages.html.
 
 `./filechange-compile`
 
-This will generate a pdf and delete all the auxilary files after, every time your input files (.bib, .tex) change.
+This will generate a pdf and delete all the auxiliary files after, every time your input files (.bib, .tex) change.
+Put graphics in the root directory.
 # Troubleshooting
 If packages are missing, e.g. you get an error 'missing-package.sty not found'
 
@@ -25,3 +26,5 @@ If packages are missing, e.g. you get an error 'missing-package.sty not found'
 If that does not work, you might find this script helpful: 
 
 https://github.com/maphy-psd/texliveonfly
+
+This was only tested on mac so far.
